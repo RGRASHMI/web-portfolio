@@ -1,11 +1,10 @@
-header{
-    padding-top: 100px;
-}
-
-.logo{
-    width: 100px;
-}
-
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  /* general */
 html {
     font-size: 16px;
   }
@@ -125,16 +124,6 @@ margin:0 auto;
     margin-bottom: 40px;
   }
   
-  /* icon tiles */
-  .icon-tile {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .icon-tile h2{
-    padding-top: 20px;
-  }
-  
   @media only screen and (min-width: 768px) {
     .icon-tile {
       padding: 60px 40px;
@@ -177,6 +166,16 @@ margin:0 auto;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
   
   /* footer */

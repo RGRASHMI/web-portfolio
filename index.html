@@ -1,8 +1,36 @@
 <html>
+  <body style="background-color:rgb(197, 216, 221);">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <style>
+     body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #1765da;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #3ebd44;
+}
+
      /* Style all font awesome icons */
 .fa {
     padding: 20px;
@@ -47,9 +75,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
   </head>
   <body class="Portfolio">
-    <header>
 
- <!--logo-->
+     <!--logo-->
+    <header>
       <img src="images/Dholl-Puri-Logo.svg" alt="" width="600" />
     </header>
 
@@ -63,7 +91,7 @@
 </div>
 </section>
 
-<!--tiles-->
+<!--3 tiles-->
 <section class="row space-top-10">
   <div class="one-third">
       <p>Our restaurant reflects this diversity and cultural influences of Mauritius.</p>
@@ -87,8 +115,8 @@
             <div class="col">
               <div class="one-third">
           </main>
-          <!-- portfolio block-->
 
+          <!-- portfolio block-->
     <section class="row-clear">
       <h2 class="title">Portfolio</h2>
       <div class="grid-container">
@@ -144,12 +172,12 @@
                 </div> 
                 <h3>Please fill in the form below for orders</h3>
                 <div class="half">
-                    <div class="contact-form">
-                        <input type="text" First Name="First Name" placeholder="First Name"/>
-                         <input type="text" Last Name="Last Name" placeholder="Last Name"/>
-                         <input type="text" Contact Details="Contact Details" placeholder="Phone Number"/>
-                        <textarea placeholder="Order"></textarea>
-                        <input type="submit" value="Send"/>
+                  <div class="contact-form">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+       <input type="text" Contact Details="Contact Details" placeholder="Phone Number"/>
+       <textarea id="subject" name="subject" placeholder="Order" style="height:100px"></textarea>
+      <input type="submit" value="Submit"/>
             </div>
             </div>
         </div>
